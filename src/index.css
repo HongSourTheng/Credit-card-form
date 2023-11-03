@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+body {
+  font-family: "Space Grotesk", sans-serif;
+  user-select: none;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0%, 100%);
+  /* background-color: lightgray; */
+}
+.left-box {
+  width: 50%;
+  height: 100%;
+  /* background-color: darkblue; */
+  float: left;
+  position: relative;
+}
+.left-box img {
+  width: 55%;
+  height: 100%;
+  object-fit: cover;
+  float: left;
+}
+.left-box > .card-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);  */
+  /* background-color: darkkhaki; */
+}
+.left-box .card-box > .card-one {
+  background-color: dimgray;
+  width: 375px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 205px;
+  position: absolute;
+  top: 20%;
+  /* padding: 10px 20px; */
+  left: 20%;
+}
+.left-box .card-box .card-one .chip {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: 35px;
+  height: 35px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.left-box .card-box .card-one .circle {
+  position: absolute;
+  top: 31.2px;
+  left: 67px;
+
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%);
+}
+.left-box .card-box .card-one .box {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 73px;
+  /* background-color: cyan; */
+}
+.left-box .card-box .card-one .box .card-num {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3rem;
+  /* text-align: left; */
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-left: 1.8rem;
+  
+}
+
+.left-box .card-box .card-one .box .box-2 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  /* background-color: darkgoldenrod; */
+  display: flex;
+  justify-content: space-between;
+}
+/* 
+.left-box .card-box .card-one .box .box-2 h3{
+    font-size: 0.9rem;
+    color: hsl(0, 0%, 100%);
+
+} */
+.left-box .card-box .card-one .box .box-2 .time,
+.left-box .card-box .card-one .box .box-2 h3 {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 100%);
+  opacity: 0.9;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.left-box .card-box .card-one img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.left-box .card-box > .card-two {
+  background-color: rgb(155, 47, 47);
+  width: 375px;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 205px;
+  position: absolute;
+  top: 52.5%;
+  /* padding: 10px 20px; */
+  left: 31%;
+}
+
+.left-box .card-box .card-two img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.left-box .card-box .card-two h1 {
+  font-size: 0.8rem;
+  width: 60px;
+  position: absolute;
+  bottom: 51%;
+  right: 13%;
+  direction: rtl;
+  transform: translateY(50%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+}
+.right-box {
+  width: 50%;
+  height: 100%;
+  /* background-color: darkorange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-box .main-form {
+  width: 55%;
+  height: 60%;
+  /* background-color: darkgray; */
+  float: left;
+  padding: 3rem;
+  box-shadow: 0 2px 5px rgba(173, 216, 230, 0.505);
+}
+
+.right-box .main-form .body-form {
+  width: 100%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.right-box .main-form .body-form .box-form {
+  margin-bottom: 1rem;
+}
+.right-box .main-form .body-form .box-form > span {
+  display: block;
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 66%);
+  margin-top: 5px;
+  height: 20px;
+}
+.right-box .main-form .body-form .box-form label {
+  width: 100%;
+  font-size: 0.68rem;
+  float: left;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+.right-box .main-form .body-form .box-form input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  color: hsl(278, 68%, 11%);
+  font-weight: bold;
+  border: 1px solid hsl(279, 6%, 55%);
+  cursor: pointer;
+}
+.right-box .main-form .body-form .box-form input:focus {
+  border: 1.5px solid hsl(278, 68%, 11%);
+}
+.right-box
+  .main-form
+  .body-form
+  .box-form
+  input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.right-box .main-form .body-form .box-form:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  /* background-color: darkgoldenrod; */
+  margin-top: 1.5rem;
+}
+
+.right-box .main-form .body-form .box-form .box-form-2 {
+  width: 50%;
+  /* background-color: chartreuse; */
+}
+.right-box .main-form .body-form .box-form .box-form-2 > input {
+  width: 37.5%;
+  margin-bottom: 5px;
+}
+.right-box .main-form .body-form .box-form .box-form-2 #space {
+  margin-left: 15px;
+}
+.right-box .main-form .body-form .box-form .box-form-3 {
+  width: 50%;
+  /* background-color: cornsilk; */
+}
+.right-box .main-form .body-form .box-form .box-form-3 > input {
+  width: 100%;
+  margin-bottom: 1px;
+}
+.right-box .main-form .body-form .box-form .box-form-2,
+.box-form-3 > span {
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 66%);
+}
+.btn-confirm {
+  position: absolute;
+  top: 82.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 12.5px 0;
+  background-color: hsl(278, 68%, 11%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+.btn-confirm:hover {
+  box-shadow: 0 5px 15px rgba(31, 19, 97, 0.25);
+}
+.container-box {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.complete-box {
+  width: 55%;
+  height: 60%;
+  /* background-color: darkgray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  /* box-shadow: 0 2px 5px rgba(173, 216, 230, 0.505); */
+  /* background-color: #ccc; */
+  gap: 1.8rem;
+}
+.complete-box ul li {
+  width: 65px;
+  height: 65px;
+
+  background: linear-gradient(
+    to right,
+    hsla(249, 99%, 64%, 1) 0%,
+    hsla(278, 94%, 30%, 1) 100%
+  );
+
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.complete-box ul li > i {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.complete-box .text-box {
+  text-align: center;
+}
+.complete-box .text-box > h1 {
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  color: hsl(278, 68%, 11%);
+  margin-bottom: 13px;
+}
+.complete-box .text-box > p {
+  font-size: 1rem;
+  opacity: 0.6;
+}
+.complete-box > .btn-continue {
+  width: 100%;
+  background-color: hsl(278, 68%, 11%);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 0.5rem;
+}
+.complete-box .btn-continue a{
+  display: block;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  transition: 0.2s ease-in-out;
+  padding: 12.5px 0;
+  letter-spacing: 1px;
+}
+.btn-continue:hover{
+  box-shadow: 0 5px 15px rgba(31, 19, 97, 0.25);
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .left-box {
+    width: 100%;
+    height: 40%;
+  }
+  .left-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .left-box .card-box .card-one img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .left-box .card-box > .card-one {
+    width: 330px;
+    height: 180px;
+    z-index: 2;
+    top: 45%;
+    left: 12%;
+  }
+  .left-box .card-box .card-one .box .card-num {
+    font-size: 1.15rem;
+
+  }
+  .left-box .card-box .card-one .box .box-2 .time,
+  .left-box .card-box .card-one .box .box-2 h3 {
+    font-size: 0.8rem;
+  }
+
+  .left-box .card-box .card-one .chip {
+    width: 30px;
+    height: 30px;
+  }
+  .left-box .card-box .card-one .circle {
+    top: 29px;
+    left: 60px;
+    width: 13px;
+    height: 13px;
+  }
+  .left-box .card-box .card-one .box {
+    height: 62.5px;
+  }
+
+  .left-box .card-box > .card-two {
+    width: 330px;
+    height: 180px;
+    top: 10%;
+    left: 25%;
+  }
+
+  .right-box {
+    width: 100%;
+    height: 60%;
+  }
+  .right-box .main-form {
+    width: 55%;
+    height: 70%;
+    padding: 0rem;
+    box-shadow: none;
+  }
+  .right-box .main-form .body-form .box-form input {
+    padding: 10px;
+  }
+  .btn-confirm {
+    top: 90%;
+  }
+
+  .container-box {
+    width: 100%;
+    height: 60%;
+  }
+  .complete-box {
+    width: 100%;
+    height: 100%;
+  }
+  .complete-box > .btn-continue {
+    width: 80%;
+    padding: 5px 0;
+  }
+}
